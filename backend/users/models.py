@@ -10,7 +10,7 @@ class TelegramProfile(models.Model):
                              on_delete=models.CASCADE,
                              verbose_name='Django Default User')
     tg_user_id = models.IntegerField(verbose_name='User telegram ID')
-    tg_user_language = models.CharField(verbose_name='User telegram language')
+    tg_user_language = models.CharField(max_length=30, verbose_name='User telegram language')
 
     def __str__(self):
         return f'{self.tg_user_id, self.user.username}'
