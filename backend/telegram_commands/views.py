@@ -3,7 +3,7 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from commands.models import AiogramCommands
+from telegram_commands.models import AiogramCommands
 
 
 class GetTextForCommand(APIView):
