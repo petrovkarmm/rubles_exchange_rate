@@ -1,3 +1,5 @@
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/4e29b151-c774-4e24-9a68-e5b74a23dd49)
+
 <h1>Project install</h1>
 
 <h2>1) Clone repo</h2>
