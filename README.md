@@ -6,7 +6,7 @@
 
 <li>cd backend</li>
 <li>python manage.py migrate</li>
-<li>python manage.py set_admin_django</li>
+<li>python manage.py set_admin_django(creating djangp-admin)</li>
 <li>python manage.py runserver</li>
 
 <h2>telegram bot start</h2>
@@ -14,6 +14,9 @@
 
 
 <h2>Visit bot on https://t.me/rubles_exchange_rate_bot</h2>
+
+<h2>Admin panel on http://127.0.0.1:8000/admin/</h2>
+(login: admin, pass: 123)
 
 
 <h1>Miro plan</h1>
