@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+import users.models
 from .serializers import UserRegisterSerializer, UserIDCheckSerializer, UserActivitySerializer
 from .models import TelegramUser, TelegramUserActivity
 
@@ -104,7 +105,14 @@ class UserSubscribe(APIView):
         if serializer.is_valid():
             tg_user_id = serializer.validated_data.get('tg_user_id')
 
-            have_a_subscription = TelegramUser.objects.values('have_a_subscription').get(tg_user_id=tg_user_id)
+            try:
+                have_a_subscription = TelegramUser.objects.values('have_a_subscription').get(tg_user_id=tg_user_id)
+
+            except:
+                have_a_subscription = {
+                    'have_a_subscription': False
+                }
+                return Response(have_a_subscription, status=status.HTTP_200_OK)
 
             return Response(have_a_subscription, status=status.HTTP_200_OK)
 
