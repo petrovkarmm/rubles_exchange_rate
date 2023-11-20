@@ -10,7 +10,7 @@
 
 <li>cd backend</li>
 <li>python manage.py migrate</li>
-<li>python manage.py set_admin_django(creating djangp-admin)</li>
+<li>python manage.py set_admin_django</li>
 <li>python manage.py runserver</li>
 
 <h2>5) Telegram bot start</h2>
