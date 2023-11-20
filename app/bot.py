@@ -27,7 +27,7 @@ async def cancel_choice(message: Message):
 
 
 async def main():
-    bot = Bot(token=os.environ.get('AIOGRAM_API_KEY'))
+    bot = Bot(token='6593705755:AAGX3OH78Y8j31creJD66GWRpwCHOLIik28')
     dp = Dispatcher()
 
     scheduler = AsyncIOScheduler(timezone='Europe/Moscow')
