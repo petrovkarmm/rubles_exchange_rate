@@ -2,29 +2,50 @@
 <h2>Машинное состояние НЕ ЗАРЕГИСТРИРОВАННЫЙ. Ограниченный функционал. Возможно пользоваться ботов только после регистрации.</h2>
 <h3>Так же присутствует проверка. Если вдруг слетает марка ЗАРЕГИСТРИРОВАННЫЙ происходит проверка бд(марка падает при сбое работы ТГ бота)</h3>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/4e29b151-c774-4e24-9a68-e5b74a23dd49)
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/43b60b81-a365-4fd6-a46d-19146861f239)
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/51b319be-5a0e-480f-9a5d-b38606ad80db)
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/f0e88282-b5d7-4014-9ea9-bcdf8984e461)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/793a1343-14b2-4486-b46a-c7113257228c)
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/5271e7d5-d7fb-4a2f-92ab-14676451b28c)
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c07f7e52-d8b2-41d6-99b5-9ef4b83ae69c)
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c9954782-6fe8-48ed-a79a-6ff6b52e074c)
+
+<h2>Django admin panel</h2>
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/a6aa1844-f257-4169-bdc4-317147857825)
+
 
 <h3>Так же присутствует проверка. Если вдруг слетает марка ЗАРЕГЕСТРИРОВАННЫЙ происходит проверка бд(марка падает при сбое работы ТГ бота)</h3>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/1886ef5d-bef3-4c02-aa2c-6842b4328d28)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/ffa1744c-9b8c-4952-9fdf-51611ded4f3b)
 
 <h1>Основные команды: </h1>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/8de5b81e-6ff9-4988-a6a1-0dc2e6786011)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/b1139f8a-218c-458e-be36-731c5355b2d0)
 
 <h1>Подписка: </h1>
 <h2>При подписке статус саба в БД True. Так же на ежедневной основе в 12:00 по мск автоматически идет рассылка всем ID в базе данных у которых статус саб == True.</h2>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/3a6318e6-ecd7-40bb-a217-530fe5227752)
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c95017e6-d961-4c65-8881-124ec8435848)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/a2e838d9-658b-487e-8a2c-5fc60681f247)
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/1ce678b5-e89a-4ddc-a1be-5e160a8726c5)
+
+<h3>Django admin panel</h3>
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/a2e8fd29-bc11-4758-9425-003184a61e1a)
+
 
 <h2>Состояние кнопок подписаться и отписаться зависит от отсутствия или присутствия подписки пользователя.</h2>
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/78b458bd-dca6-4640-8ae2-55cf6783a9c4)
+
 <h2>При отписке отправляется запрос к БД и статус подписки переходит на False</h2>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/a7bf66b7-da76-4c07-96be-4709ddf7c2ef)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/acb358cf-af0b-4e3a-9d05-bb813380dc9c)
+
+<h2>Django admin panel</h2>
+
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/442d2ea4-d9f2-4f84-a761-ca2c4595d1a8)
+
 
 <h3>UPD. Реализованы кастомные команды с админ панели только для /start(Для показа, что это возможно). В Aiogram commands admin django добавляем название команды /start и текст, который хотим, чтобы бот прислал. Если такая запись в админке отсутствует, присылает дефолтную фразу.</h3>
 
