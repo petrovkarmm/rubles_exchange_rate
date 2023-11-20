@@ -30,6 +30,7 @@ async def cmd_start(message: Message, state: FSMContext):
 
         response_command = await django_start_command(data=command)
 
+
         if response_command.get('text'):
             await message.answer(
                 text=response_command.get('text')

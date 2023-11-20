@@ -2,7 +2,6 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-import users.models
 from .serializers import UserRegisterSerializer, UserIDCheckSerializer, UserActivitySerializer
 from .models import TelegramUser, TelegramUserActivity
 

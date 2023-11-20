@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from telegram_commands.models import AiogramCommands
+from .models import AiogramCommands
 
 
 admin.site.register(AiogramCommands)

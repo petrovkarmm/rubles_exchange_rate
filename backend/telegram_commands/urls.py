@@ -1,6 +1,6 @@
 from django.urls import path
 
-from telegram_commands.views import GetTextForCommand
+from .views import GetTextForCommand
 
 app_name = 'telegram_commands'
 

@@ -62,6 +62,6 @@ async def django_getting_all_subs():
 
 async def django_start_command(data):
     async with aiohttp.ClientSession() as session:
-        url = f'{local_url}/commands/command-text/'
+        url = f'{local_url}/telegram_commands/command-text/'
         async with session.get(url, json=data) as response:
             return await response.json()

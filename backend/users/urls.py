@@ -1,6 +1,6 @@
 from django.urls import path
 
-from users.views import UserRegistration, UserActivity, UserSubscribe, UserUnSubscribe, GettingAllSubs
+from .views import UserRegistration, UserActivity, UserSubscribe, UserUnSubscribe, GettingAllSubs
 
 app_name = 'users'
 
