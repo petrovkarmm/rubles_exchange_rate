@@ -2,7 +2,7 @@ from aiogram import Router, F
 from aiogram.filters import Command, StateFilter
 from aiogram.types import Message
 
-from app.data_fetcher import django_user_registration, django_user_check_registration
+from app.data_fetcher import django_user_registration, django_user_check_registration, django_start_command
 from app.routers.main_menu_router.keyboards.main_menu_buttons import main_menu_kb
 from app.routers.registration_router.keyboards.path_to_registration_button import start_register_kb
 from app.routers.registration_router.keyboards.registration_buttons import register_kb
@@ -23,13 +23,26 @@ async def cmd_start(message: Message, state: FSMContext):
     response = await django_user_check_registration(data=data)
 
     if response.get('result'):
-        await message.answer(
-            "Для дальнейшей работы с ботом вам необходимо пройти регистрацию."
-            "\nНажав на кнопку Зарегистрироваться вы принимаете условия на обработку данных, а именно: "
-            "\nИмя, фамилия, а так же имя пользователя и его ID.",
-            reply_markup=register_kb()
-        )
-        await state.set_state(Register.start_registration)
+
+        command = {
+            'command': '/start'
+        }
+
+        response_command = await django_start_command(data=command)
+
+        if response_command.get('text'):
+            await message.answer(
+                text=response_command.get('text')
+            )
+            await state.set_state(Register.start_registration)
+        else:
+            await message.answer(
+                "Для дальнейшей работы с ботом вам необходимо пройти регистрацию."
+                "\nНажав на кнопку Зарегистрироваться вы принимаете условия на обработку данных, а именно: "
+                "\nИмя, фамилия, а так же имя пользователя и его ID.",
+                reply_markup=register_kb()
+            )
+            await state.set_state(Register.start_registration)
     else:
         await message.answer(
             'Вы уже были зарегистрированы в системе. Произвожу авторизацию.',
