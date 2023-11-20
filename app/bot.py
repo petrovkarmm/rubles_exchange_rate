@@ -4,7 +4,6 @@ import asyncio
 from aiogram.types import Message
 
 import apsched
-from datetime import datetime
 
 from app.routers.main_menu_router import main_menu_router
 from app.routers.main_menu_router.keyboards.main_menu_buttons import main_menu_kb
@@ -38,6 +37,7 @@ async def main():
 
     # Тест работы отправки сообщения по подписке.
     # scheduler.add_job(apsched.send_currency_for_subs, trigger='interval', seconds=15, kwargs={'bot': bot})
+
     scheduler.start()
 
     dp.include_router(registration_router.router)
