@@ -15,4 +15,7 @@
 
 <h2>Visit bot on https://t.me/rubles_exchange_rate_bot</h2>
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNNugHFE=/?moveToViewport=-9626,-5101,9716,4972&embedId=305493479757" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+<h1>Miro plan</h1>
+
+https://miro.com/welcomeonboard/Wm84eDZXUTdLd3dyOGVTOU5sNzNXN3dBRks4bTIxeHBmV00zNlZJQVFodnRHcFp6TGF3S0p4c2J2SzByNnZua3wzNDU4NzY0NTY0NTMyMjIwNjM5fDI=?share_link_id=753020220620
