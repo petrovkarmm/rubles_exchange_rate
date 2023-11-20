@@ -1,5 +1,3 @@
-# rubles_exchange_rate
-
 <h1>Project install</h1>
 
 <h2>1) Clone repo</h2>
