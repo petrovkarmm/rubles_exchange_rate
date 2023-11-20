@@ -119,7 +119,7 @@ async def subscribe_user_handler(message: Message):
 
     if response:
         await message.answer(
-            "Вы успешно были подписаны на еженедельную рассылку.",
+            "Вы успешно были подписаны на ежедневную рассылку.",
             reply_markup=main_menu_kb()
         )
 
