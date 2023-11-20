@@ -1,9 +1,9 @@
 # rubles_exchange_rate
 
-<h2>Backend</h2>
+<h2>backend start</h2>
 
-<p>cd backend</p>
-<p>python manage.py migrate</p>
-<p>python manage.py set_admin_django</p>
-<p>python manage.py runserver</p>
+<li>cd backend</li>
+<li>python manage.py migrate</li
+<li>python manage.py set_admin_django</li
+<li>python manage.py runserver</li
 
