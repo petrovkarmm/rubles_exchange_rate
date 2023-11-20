@@ -18,7 +18,7 @@
 <h1>Подписка: </h1>
 <h2>При подписке статус саба в БД True. Так же на ежедневной основе в 12:00 по мск автоматически идет рассылка всем ID в базе данных у которых статус саб == True.</h2>
 
-![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c8674d31-4a40-4317-9d27-9e9f69c6b6e6)
+![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/3a6318e6-ecd7-40bb-a217-530fe5227752)
 ![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c95017e6-d961-4c65-8881-124ec8435848)
 
 <h2>Состояние кнопок подписаться и отписаться зависит от отсутствия или присутствия подписки пользователя.</h2>
