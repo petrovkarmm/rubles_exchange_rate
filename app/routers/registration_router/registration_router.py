@@ -54,10 +54,10 @@ async def end_registration_handler(message: Message, state: FSMContext):
 
     data = {
         "tg_user_id": message.from_user.id,
-        "tg_user_first_name": message.from_user.first_name,
-        "tg_user_last_name": message.from_user.last_name,
-        "tg_user_username": message.from_user.username,
-        "tg_user_language": message.from_user.language_code,
+        "tg_user_first_name": message.from_user.first_name or None,
+        "tg_user_last_name": message.from_user.last_name or None,
+        "tg_user_username": message.from_user.username or None,
+        "tg_user_language": message.from_user.language_code or None,
     }
 
     response = await django_user_registration(data)
