@@ -19,10 +19,10 @@ router.message.middleware(UserActivityMiddleware())
 @router.message(Register.end_registration, F.text.lower() == '🌐 информация о пользователе.')
 async def about_user_handler(message: Message):
     user_id = message.from_user.id
-    first_name = message.from_user.first_name
-    last_name = message.from_user.last_name
-    username = message.from_user.username
-    user_language_code = message.from_user.language_code
+    first_name = message.from_user.first_name or 'Не удалось узнать.'
+    last_name = message.from_user.last_name or 'Не удалось узнать.'
+    username = message.from_user.username or 'Не удалось узнать.'
+    user_language_code = message.from_user.language_code or 'Не удалось узнать.'
 
     await message.reply(
         f"Выдаю информацию о Вас.\n"
