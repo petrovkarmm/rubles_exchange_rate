@@ -11,6 +11,7 @@
 ![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/c9954782-6fe8-48ed-a79a-6ff6b52e074c)
 
 <h2>Django admin panel</h2>
+
 ![image](https://github.com/petrovkarmm/rubles_exchange_rate/assets/139163328/a6aa1844-f257-4169-bdc4-317147857825)
 
 
